@@ -7,7 +7,7 @@ const ItemListContainer = () => {
   const [myProducts, setMyProducts] = useState([]);
 
   useEffect(() => {
-    let task = new Promise((res) => {
+    let task = new Promise((res, rej) => {
       res(products);
     });
     task
