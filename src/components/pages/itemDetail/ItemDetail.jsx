@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../../../products";
 
-products;
-
 const ItemDetail = () => {
   const { id } = useParams(); // siempre llega un objeto y los valores siempre son string
 
