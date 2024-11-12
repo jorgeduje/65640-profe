@@ -7,7 +7,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam blanditiis officia dignissimos! Expedita quod voluptatem molestias id maxime explicabo ipsa.",
     price: 59.99,
-    category: "teclado",
+    category: "teclados",
   },
   {
     id: 2,
@@ -57,7 +57,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam blanditiis officia dignissimos! Expedita quod voluptatem molestias id maxime explicabo ipsa.",
     price: 60,
-    category: "keyboard",
+    category: "teclados",
   },
   {
     id: 7,
@@ -87,7 +87,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam blanditiis officia dignissimos! Expedita quod voluptatem molestias id maxime explicabo ipsa.",
     price: 50.99,
-    category: "keyboard",
+    category: "teclados",
   },
   {
     id: 10,
