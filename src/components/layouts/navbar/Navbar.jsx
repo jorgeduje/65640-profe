@@ -1,4 +1,5 @@
-import CartWidget from "../cartWidget/CartWidget";
+import { Link } from "react-router-dom";
+import CartWidget from "../../common/cartWidget/CartWidget";
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
         backgroundColor: "steelblue",
       }}
     >
-      <h2>logo</h2>
+      <Link to="/">logo</Link>
       <ul
         style={{
           display: "flex",
@@ -19,9 +20,8 @@ const Navbar = () => {
           gap: "20px",
         }}
       >
-        <li>Todos</li>
-        <li>Teclados</li>
-        <li>Mouses</li>
+        <Link to="/category/teclados">Teclados</Link>
+        <Link to="/category/mouse">Mouses</Link>
       </ul>
       <CartWidget />
     </div>
