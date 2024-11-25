@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../../../products";
+import Counter from "../../common/counter/Counter";
 
 const ItemDetail = () => {
-  const { id } = useParams(); // siempre llega un objeto y los valores siempre son string
+  const { id } = useParams();
 
   const [product, setProduct] = useState({});
 
@@ -16,6 +17,7 @@ const ItemDetail = () => {
     <div>
       <h2>{product.title}</h2>
       <img src={product.img} alt="" />
+      <Counter />
     </div>
   );
 };
