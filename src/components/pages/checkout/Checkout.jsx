@@ -14,7 +14,6 @@ const Checkout = () => {
   const funcionDelFormulario = (e) => {
     e.preventDefault();
     // las peticiones a la API
-
     console.log("se envia a la api estos datos ", userData);
   };
 
