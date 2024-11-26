@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    stock: 10,
+    stock: 5,
     title: "Razer Cynosa V2 - US",
     img: "https://i.ibb.co/0DwNRHg/razer-cynosa-v2-500x500.png",
     description:
@@ -11,7 +11,7 @@ export const products = [
   },
   {
     id: 2,
-    stock: 10,
+    stock: 11,
     title: "Razer Kraken V3 HyperSense",
     img: "https://i.ibb.co/gSn9vZk/hx-product-headsets-cloud-stinger-core-wireless-71-1-tn.png",
     description:
@@ -21,7 +21,7 @@ export const products = [
   },
   {
     id: 3,
-    stock: 10,
+    stock: 7,
     title: "Razer Naga X",
     img: "https://i.ibb.co/fQRBtCc/naga-x.png",
     description:
@@ -31,7 +31,7 @@ export const products = [
   },
   {
     id: 4,
-    stock: 10,
+    stock: 4,
     title: "QCK PRISM XL DOTA 2 EDITION",
     img: "https://i.ibb.co/MSKB85d/top-mat-1.png",
     description:
@@ -41,7 +41,7 @@ export const products = [
   },
   {
     id: 5,
-    stock: 10,
+    stock: 8,
     title: "HyperX Cloud Stinger Core Wireless 71.1",
     img: "https://i.ibb.co/gSn9vZk/hx-product-headsets-cloud-stinger-core-wireless-71-1-tn.png",
     description:
@@ -51,7 +51,7 @@ export const products = [
   },
   {
     id: 6,
-    stock: 10,
+    stock: 12,
     title: "HyperX Alloy Core RGB Membrane",
     img: "https://i.ibb.co/0DwNRHg/razer-cynosa-v2-500x500.png",
     description:
@@ -61,7 +61,7 @@ export const products = [
   },
   {
     id: 7,
-    stock: 10,
+    stock: 4,
     title: "Pulsefire Core RGB",
     img: "https://i.ibb.co/fQRBtCc/naga-x.png",
     description:
@@ -71,7 +71,7 @@ export const products = [
   },
   {
     id: 8,
-    stock: 10,
+    stock: 11,
     title: "FURY Ultra",
     img: "https://i.ibb.co/MSKB85d/top-mat-1.png",
     description:
@@ -91,7 +91,7 @@ export const products = [
   },
   {
     id: 10,
-    stock: 10,
+    stock: 9,
     title: "ZEUS X H510",
     img: "https://i.ibb.co/gSn9vZk/hx-product-headsets-cloud-stinger-core-wireless-71-1-tn.png",
     description:

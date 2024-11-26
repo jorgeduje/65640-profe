@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "../../../context/CartContext";
 
 const btnStyles = {
   padding: "10px 40px",
@@ -14,15 +15,27 @@ const divStyles = {
   justifyContent: "center",
   gap: "20px",
 };
-const Counter = () => {
+const Counter = ({ product }) => {
+  const { addToCart } = useContext(CartContext);
   const [count, setCount] = useState(1);
 
   const handleIncrement = () => {
-    setCount(count + 1);
+    if (count < product.stock) {
+      setCount(count + 1);
+    }
   };
 
   const handleDecrement = () => {
-    setCount(count - 1);
+    if (count > 1) {
+      setCount(count - 1);
+    } else {
+      alert("minimo 1 ");
+    }
+  };
+
+  const onAdd = () => {
+    let productToCart = { ...product, quantity: count };
+    addToCart(productToCart);
   };
 
   return (
@@ -36,7 +49,9 @@ const Counter = () => {
           +
         </button>
       </div>
-      <button style={btnStyles}>Agregar al carrito</button>
+      <button style={btnStyles} onClick={onAdd}>
+        Agregar al carrito
+      </button>
     </div>
   );
 };
