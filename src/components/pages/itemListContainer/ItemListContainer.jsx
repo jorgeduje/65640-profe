@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { products } from "../../../products";
+// import { products } from "../../../products";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import { PuffLoader } from "react-spinners";
+import { db } from "../../../firebaseConfig";
+import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
 
 const ItemListContainer = () => {
   const [myProducts, setMyProducts] = useState([]);
@@ -11,32 +13,39 @@ const ItemListContainer = () => {
   const { name } = useParams();
 
   useEffect(() => {
-    let productosFiltrados = products.filter((el) => el.category === name);
-
-    let task = new Promise((res) => {
-      setTimeout(() => {
-        res(name ? productosFiltrados : products);
-      }, 2000);
+    // traer los productos de firestore
+    const productsCollection = collection(db, "products");
+    let refCollection = productsCollection;
+    if (name) {
+      const productsCollectionFiltered = query(
+        productsCollection,
+        where("category", "==", name)
+      );
+      refCollection = productsCollectionFiltered;
+    }
+    // filtrado en la DB
+    // y luego le pedimos los documentos
+    const getProducts = getDocs(refCollection);
+    getProducts.then((res) => {
+      let products = res.docs.map((elemento) => {
+        return { ...elemento.data(), id: elemento.id };
+      }); // []
+      setMyProducts(products);
     });
-    task
-      .then((resp) => {
-        setMyProducts(resp);
-      })
-      .catch((error) => {
-        console.log(error);
-      })
-      .finally(() => {
-        console.log("Finally");
-      });
   }, [name]);
 
-  // if (myProducts.length === 0) {
-  //   return <h1>Cargando....</h1>;
-  // }
+  // const agregarProductos = () => {
+  //   let productsCollection = collection(db, "products");
+
+  //   products.forEach((elemento) => {
+  //     addDoc(productsCollection, elemento);
+  //   });
+  // };
 
   return (
     <div>
       <h2>Aca los productos</h2>
+      {/* <button onClick={agregarProductos}>Agregar productos</button> */}
       {myProducts.length === 0 ? (
         <div
           style={{

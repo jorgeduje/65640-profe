@@ -1,6 +1,5 @@
 export const products = [
   {
-    id: 1,
     stock: 5,
     title: "Razer Cynosa V2 - US",
     img: "https://i.ibb.co/0DwNRHg/razer-cynosa-v2-500x500.png",
@@ -10,7 +9,6 @@ export const products = [
     category: "teclados",
   },
   {
-    id: 2,
     stock: 11,
     title: "Razer Kraken V3 HyperSense",
     img: "https://i.ibb.co/gSn9vZk/hx-product-headsets-cloud-stinger-core-wireless-71-1-tn.png",
@@ -20,7 +18,6 @@ export const products = [
     category: "headset",
   },
   {
-    id: 3,
     stock: 7,
     title: "Razer Naga X",
     img: "https://i.ibb.co/fQRBtCc/naga-x.png",
@@ -30,7 +27,6 @@ export const products = [
     category: "mouse",
   },
   {
-    id: 4,
     stock: 4,
     title: "QCK PRISM XL DOTA 2 EDITION",
     img: "https://i.ibb.co/MSKB85d/top-mat-1.png",
@@ -40,7 +36,6 @@ export const products = [
     category: "pad",
   },
   {
-    id: 5,
     stock: 8,
     title: "HyperX Cloud Stinger Core Wireless 71.1",
     img: "https://i.ibb.co/gSn9vZk/hx-product-headsets-cloud-stinger-core-wireless-71-1-tn.png",
@@ -50,7 +45,6 @@ export const products = [
     category: "headset",
   },
   {
-    id: 6,
     stock: 12,
     title: "HyperX Alloy Core RGB Membrane",
     img: "https://i.ibb.co/0DwNRHg/razer-cynosa-v2-500x500.png",
@@ -60,7 +54,6 @@ export const products = [
     category: "teclados",
   },
   {
-    id: 7,
     stock: 4,
     title: "Pulsefire Core RGB",
     img: "https://i.ibb.co/fQRBtCc/naga-x.png",
@@ -70,7 +63,6 @@ export const products = [
     category: "mouse",
   },
   {
-    id: 8,
     stock: 11,
     title: "FURY Ultra",
     img: "https://i.ibb.co/MSKB85d/top-mat-1.png",
@@ -80,7 +72,6 @@ export const products = [
     category: "pad",
   },
   {
-    id: 9,
     stock: 10,
     title: "DRAGONBORN K630",
     img: "https://i.ibb.co/0DwNRHg/razer-cynosa-v2-500x500.png",
@@ -90,7 +81,6 @@ export const products = [
     category: "teclados",
   },
   {
-    id: 10,
     stock: 9,
     title: "ZEUS X H510",
     img: "https://i.ibb.co/gSn9vZk/hx-product-headsets-cloud-stinger-core-wireless-71-1-tn.png",
