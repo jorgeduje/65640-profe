@@ -15,11 +15,9 @@ const Checkout = () => {
   const capturarDatos = (e) => {
     setUserData({ ...userData, [e.target.name]: e.target.value });
   };
-
   const funcionDelFormulario = (e) => {
     e.preventDefault();
     // las peticiones a la API
-    console.log("se envia a la api estos datos ", userData);
     // ordenes = [  {} { }{ }{ }{ } {}]
     let total = getTotalPrice();
     let order = {
