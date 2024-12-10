@@ -7,7 +7,7 @@
 
 ![](/public/vite.svg)
 
-[Google bla bla](htpp://google.com)
+[Google](htpp://google.com)
 
 ```
 git clone http://github....
