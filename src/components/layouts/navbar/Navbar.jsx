@@ -9,7 +9,7 @@ const Navbar = () => {
         justifyContent: "space-between",
         alignItems: "center",
         padding: "12px",
-        backgroundColor: "steelblue",
+        backgroundColor: "peru",
       }}
     >
       <Link to="/">logo</Link>
